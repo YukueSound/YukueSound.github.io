@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: #f5f5f5;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+header {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #999;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    border-left: 4px solid white;
+    padding-left: 12px;
+}
+
+.card {
+    background: #1d1d1d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+}
