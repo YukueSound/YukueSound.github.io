@@ -62,14 +62,14 @@ footer {
     color: #777;
 }
 
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 iframe {
     width: 100%;
     border: none;
     border-radius: 10px;
     margin-bottom: 40px;
-}
-
-h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
