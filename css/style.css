@@ -7,8 +7,30 @@
 body {
     background: #111;
     color: #f5f5f5;
-    font-family: sans-serif;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 100;
     line-height: 1.8;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+
+    opacity: 0.04;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    body::before {
+        background-position: center center;
+    }
 }
 
 header {
@@ -21,8 +43,24 @@ header h1 {
     margin-bottom: 10px;
 }
 
+.logo {
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+}
+
 .subtitle {
-    color: #999;
+    margin: 20px 0;
+}
+
+.hero-text {
+    margin: 30px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 main {
@@ -72,4 +110,14 @@ iframe {
     border: none;
     border-radius: 10px;
     margin-bottom: 40px;
+}
+
+p {
+    margin: 24px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
