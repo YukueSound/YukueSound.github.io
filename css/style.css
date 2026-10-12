@@ -8,7 +8,7 @@ body {
     background: #111;
     color: #f5f5f5;
     font-family: "M PLUS 1p", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.8;
     position: relative;
 }
@@ -40,18 +40,6 @@ header {
 
 .page-header {
     padding: 120px 20px 80px;
-}
-
-.page-header h1 {
-    font-family: "Zen Old Mincho", serif;
-    font-size: 3rem;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
 }
 
 .logo {
@@ -163,13 +151,12 @@ iframe {
 }
 
 p {
-    margin: 24px;
+    margin: 0 0 1em;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
     margin: 0;
+    padding-left: 1.4em;
 }
 
 .playlist-link {
@@ -220,5 +207,177 @@ ul {
 
     p {
         margin: 20px 0;
+    }
+}
+
+
+/* Services page */
+.services-intro {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.services-intro h2 {
+    display: inline-block;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.services-eyebrow {
+    margin: 0;
+    color: #aaa;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+}
+
+.section-lead {
+    margin: -8px 0 24px;
+    color: #bbb;
+}
+
+.service-card {
+    background: rgba(29, 29, 29, 0.94);
+    border: 1px solid rgba(245, 245, 245, 0.12);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 18px 0;
+}
+
+.service-card h3,
+.guideline-block h3 {
+    margin-top: 0;
+}
+
+.service-card > p {
+    margin: 16px 0 0;
+}
+
+.service-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.service-card-heading h3 {
+    margin: 0;
+}
+
+.service-subtitle {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin: 4px 0 0 !important;
+}
+
+.service-price {
+    margin: 0 !important;
+    white-space: nowrap;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+}
+
+.service-price span {
+    font-size: 0.65em;
+}
+
+.service-price-range {
+    margin-top: 12px !important;
+}
+
+.status-label {
+    display: inline-block;
+    border: 1px solid rgba(245, 245, 245, 0.35);
+    border-radius: 999px;
+    padding: 4px 12px;
+    color: #ddd;
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+.guideline-block {
+    margin: 28px 0 0;
+    padding: 4px 4px 0;
+}
+
+.guideline-list {
+    list-style: disc;
+    padding-left: 1.4em;
+    margin: 12px 0 20px;
+}
+
+.guideline-list li {
+    margin: 8px 0;
+    padding-left: 0.2em;
+}
+
+.note {
+    color: #bbb;
+    font-size: 0.92rem;
+}
+
+.order-steps {
+    list-style: none;
+    counter-reset: order-step;
+    margin: 24px 0;
+    padding: 0;
+}
+
+.order-steps li {
+    counter-increment: order-step;
+    display: grid;
+    grid-template-columns: minmax(140px, 0.65fr) 1.8fr;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.15);
+}
+
+.order-steps li strong {
+    grid-column: 1;
+}
+
+.order-steps li span {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    color: #ddd;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px;
+}
+
+.contact-links .playlist-link {
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .service-card {
+        padding: 18px;
+    }
+
+    .service-card-heading {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .order-steps li {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .order-steps li strong,
+    .order-steps li span {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .contact-links {
+        margin: 24px 0;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
